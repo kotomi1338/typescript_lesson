@@ -13,6 +13,25 @@ const sum = (x: number, y: number): number => {
   return x + y;
 }
 
+// Intersection Types
+type PROFILE = {
+  age: number;
+  city: string;
+}
+type LOGIN = {
+  username: string;
+  password: string;
+}
+
+type USER = PROFILE & LOGIN;
+
+const userA: USER = {
+  age: 20,
+  city: 'yokohama',
+  username: 'kotomi1338',
+  password: 'password'
+}
+
 function App() {
   return (
     <div className="App">
