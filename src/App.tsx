@@ -9,6 +9,10 @@ interface NAME {
 
 let nameObj: NAME = { first: 'kaito', last: 'takahashi' };
 
+const sum = (x: number, y: number): number => {
+  return x + y;
+}
+
 function App() {
   return (
     <div className="App">
