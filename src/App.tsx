@@ -13,6 +13,11 @@ const sum = (x: number, y: number): number => {
   return x + y;
 }
 
+let nameObj2: typeof nameObj = {
+  first: 'ren',
+  last: 'nagase'
+}
+
 // Intersection Types
 type PROFILE = {
   age: number;
