@@ -18,6 +18,20 @@ let nameObj2: typeof nameObj = {
   last: 'nagase'
 }
 
+type KEYS = {
+  primary: string,
+  secondary: string
+}
+let key: keyof KEYS;
+key = 'primary'
+
+const SPORTS = {
+  soccor: 'Soccor',
+  baseball: 'Baseball'
+}
+let keySports: keyof typeof SPORTS;
+keySports = 'soccor'
+
 // Intersection Types
 type PROFILE = {
   age: number;
